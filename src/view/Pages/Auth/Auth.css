@@ -1,0 +1,38 @@
+.signUpDiv ,.logInDiv
+{
+   
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.signUpForm, .logInForm
+{
+    height: 500px;
+    width :400px;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+/* .logInForm
+{
+    height: 300px;
+} */
+.authInput
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:250px;
+    input{
+        padding-left:10px;
+        height: 35px;
+        border-radius: 15px;
+        border: 0;
+        outline: 0;
+    }
+}

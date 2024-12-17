@@ -1,16 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignUp from './view/Pages/Auth/signUp'; 
+import LogIn from './view/Pages/Auth/logIn'; // Import the LogIn component
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        {/* Route for Sign-Up */}
+        <Route path="/signup" element={< LogIn/>} />
+        {/* Route for Log-In */}
+        <Route path="/" element={< SignUp/>} />
+        {/* Default Route (optional) */}
+        <Route path="/home" element={<homePage />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 
